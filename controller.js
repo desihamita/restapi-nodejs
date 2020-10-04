@@ -17,3 +17,15 @@ exports.showdata = function (req,res){
         }
     });
 };
+
+//menampilkan data berdasrkan id
+exports.showdataid = function(req, res){
+    let id = req.params.id;
+    connection.query('SELECT * FROM mahasiswa where id_mahasiswa = ?', [id], function (error, rows, fileds){
+        if(error){
+            connection.log(error);
+        }else{
+            response.ok(rows, res)
+        }
+    });
+};
