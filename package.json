@@ -1,0 +1,26 @@
+{
+  "name": "restapi-nodejs",
+  "version": "1.0.0",
+  "description": "restapi-nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/desihamita/restapi-nodejs.git"
+  },
+  "keywords": [
+    "restapi",
+    "nodejs"
+  ],
+  "author": "desi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/desihamita/AppRestAPI/issues"
+  },
+  "homepage": "https://github.com/desihamita/AppRestAPI#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
