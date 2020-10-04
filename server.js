@@ -6,6 +6,10 @@ const app = express();
 app.use(bodyparser.urlencoded({extended: true}));
 app.use(bodyparser.json());
 
+//panggil routes
+var routes = require('./routes');
+routes(app);
+
 //server listening 
 const Port = process.env.Port || 2000;
 app.listen(Port, () => console.log('server running in port 2000'));
